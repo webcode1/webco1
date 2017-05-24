@@ -1,0 +1,9 @@
+<?php
+if(isset($_POST['g-recaptcha-response'])){
+          $captcha=$_POST['g-recaptcha-response'];
+        }
+		if(!$captcha){
+          header("location:2.html");
+          exit;
+        }
+		?>

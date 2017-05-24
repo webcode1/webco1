@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="stuff, to, help, search, engines, not" name="keywords">
+<meta content="What this page is about." name="description">
+<meta content="Display <a href="#">Webcam</a> <a href="#">Stream</a>" name="title">
+<title>Display <a href="#">Webcam</a> <a href="#">Stream</a></title>
+  
+<style>
+#container {
+    margin: 0px auto;
+    width: 500px;
+    height: 375px;
+    border: 10px #333 solid;
+}
+#videoElement {
+    width: 500px;
+    height: 375px;
+    background-color: #666;
+}
+</style>
+</head>
+  
+<body>
+</div>
+<script>
+ var <a href="#">video</a> = document.querySelector("#videoElement");
+ 
+navigator.<a href="#">getUserMedia</a> = navigator.<a href="#">getUserMedia</a> || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+ 
+if (navigator.<a href="#">getUserMedia</a>) {       
+    navigator.<a href="#">getUserMedia</a>({<a href="#">video</a>: true}, handleVideo, videoError);
+}
+ 
+function handleVideo(<a href="#">stream</a>) {
+    <a href="#">video</a>.src = window.URL.createObjectURL(<a href="#">stream</a>);
+}
+ 
+function videoError(e) {
+    // do something
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+	<head>	
+		<title>ARRAY</title>
+	</head>
+	<body>
+		<center><form>
+			<h3>Here is the 1st array</h3><br>
+			<h3>1 3 5 7 9 </h3><br>
+			<h3>Here is the 2nd array</h3><br>
+			<h3>2 4 6 8 10</h3><br>
+			<h3>Click Submit to interchange the values</h3>
+			<button onclick="swap();">SUBMIT</button>
+		</form></center>
+		<script>
+			var arr1 = ["1","3","5","7","9"]
+			var arr2 = ["2","4","6","8","10"]
+			function swap()
+			{
+				var i,temp;
+				for (i=0;i<5;i++)
+				{
+					temp = arr1[i];
+					arr1[i] = arr2[i];
+					arr2[i] = temp;
+				}
+				for(i=0;i<5;i++)
+				{
+					document.write("1st array:-"+ "<br >");
+					document.write(arr1[i] + "<br >");
+					
+				}
+				for(i=0;i<5;i++)
+				{
+				
+					document.write("2nd array:-"+ "<br >");
+					document.write(arr2[i] + "<br >");
+					
+				}
+			
+			
+			}
+		</script>
+	</body>
+</html>

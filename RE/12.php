@@ -1,0 +1,25 @@
+<html>
+    <head>
+      <title>Using new Google reCAPTCHA with PHP by CodexWorld</title>
+       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+       
+    </head>
+    <body>
+   // <div class="registration">
+		<h2>Contact Form</h2>
+		//<div class="avtar"><img src="images/color.jpg" /></div>
+        <?php if(!empty($errMsg)): ?><div class="errMsg"><?php echo $errMsg; ?></div><?php endif; ?>
+        <?php if(!empty($succMsg)): ?><div class="succMsg"><?php echo $succMsg; ?></div><?php endif; ?>
+		<div class="form-info">
+			<form action="" method="POST">
+				//<input type="text" class="text" value="<?php echo !empty($name)?$name:''; ?>" placeholder="Your full name" name="name" >
+                //<input type="text" class="text" value="<?php echo !empty($email)?$email:''; ?>" placeholder="Email adress" name="email" >
+                //<textarea type="text" placeholder="Message..." required="" name="message"><?php echo !empty($message)?$message:''; ?></textarea>
+				<div class="g-recaptcha" data-sitekey="6LcLPScTAAAAABgcc8Cv5Au9bTO01QRl-jnkGyX8"></div>
+				<input type="submit" name="submit" value="SUBMIT">
+			</form>
+		//</div>			
+	//	<div class="clear"> </div>
+	//</div>
+  </body>
+</html>

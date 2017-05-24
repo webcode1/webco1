@@ -1,0 +1,99 @@
+<html>
+	<head>
+	<title>Marksheet</title>
+	<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<form id="form">
+	<h1>ENTER YOUR DETAILS HERE</h1>
+		
+			<input type="text" id="name" placeholder="Name" ><br><br>
+			<input type="text" id="roll" placeholder="Roll"><br><br>
+			<h4>Enter the marks:</h4>
+			
+			<input type="text" id="com" placeholder="Computer"><br><br>
+			<input type="text" id="eng" placeholder="English"><br><br>
+			<input type="text" id="mat" placeholder="Maths"><br><br>
+			<input type="text" id="chem" placeholder="Chemistry"><br><br>
+			<input type="text" id="phy" placeholder="Physics"><br><br>
+			<input type="text" id="phys" placeholder="Physical education"><br><br>
+			<button onclick="show();">SUBMIT</button>
+		</form>
+		<script>
+		
+			function show()
+			{
+				var name = document.getElementById("name").value;
+				
+				var roll = parseInt(document.getElementById("roll").value);
+				
+				var com = parseInt(document.getElementById("com").value);
+				
+				var eng = parseInt(document.getElementById("eng").value);
+				
+				var mat = parseInt(document.getElementById("mat").value);
+				
+				var chem = parseInt(document.getElementById("chem").value);
+				
+				var phy = parseInt(document.getElementById("phy").value);
+				
+				document.write("NAME : " + name + "</br>");
+				
+				document.write("ROLL NO : " + roll + "</br>");
+				
+				document.write("The Marks Are : " + "</br>");
+				
+				document.write("Computer : " + com + "</br>");
+					if (com < 25)
+						{
+							document.write(" STATUS : FAIL" + "</br>");
+						}
+					else if (com >= 25)
+						{
+							document.write(" STATUS : PASS" + "</br>")
+						}
+				document.write("English : " + eng + "</br>");
+					if (eng < 25)
+						{
+							document.write(" STATUS : FAIL" + "</br>");
+						}
+					else if (eng >= 25)
+						{
+							document.write(" STATUS : PASS" + "</br>")
+						}
+				document.write("Maths : " + mat + "</br>");
+					if (mat < 25)
+						{
+							document.write(" STATUS : FAIL" + "</br>");
+						}
+					else if (mat >= 25)
+						{
+							document.write(" STATUS : PASS" + "</br>")
+						}
+				document.write("Chemistry : " + chem + "</br>");
+					if (chem < 25)
+						{
+							document.write(" STATUS : FAIL" + "</br>");
+						}
+					else if (chem >= 25)
+						{
+						document.write(" STATUS : PASS" + "</br>")
+						}
+				document.write("Physics : " + phy + "</br>");
+				var p = ( com + eng + mat + chem + phy);
+				var per = ((p/500)*100);
+				document.write("PERCENTAGE : " + per + "%" +"</br>");
+					if (per < 40)
+						{
+							document.write(" RESULT : FAIL" + "</br>");
+						}
+					else if (per >= 40)
+						{
+							document.write(" RESULT : PASS" + "</br>")
+						}
+				
+			}
+			
+		</script>
+	</body>
+</html>

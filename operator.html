@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>OPERATORS IN C</title>
+</head>
+<body>
+<input type="text" id="first" >
+<input type="text" id="second" >
+<button onclick="oper();">SUBMIT</button>
+<script>
+	
+	function oper()
+	{
+	var a = parseInt(document.getElementById("first").value);
+	var b = parseInt(document.getElementById("second").value);
+	document.write("Arthmetic Operators" + "<br>");
+	var sum = a + b;
+	document.write( "addition : " + sum + "<br>");
+	var diff = a - b;
+	document.write( "Subtraction : " + diff + "<br>");
+	var mul = a * b;
+	document.write( "Multiplication : " + mul + "<br>");
+	var div = a / b;
+	document.write( "Division : " + div + "<br>");
+	var rem = a % b;
+	document.write( "Modulous : " + rem + "<br>");
+	document.write("Increment Operators" + "<br>");
+	var inc = a + 1;
+	document.write( "Increment: " + inc + "<br>");
+	var dec = a - 1;
+	document.write( "Decrement: " + dec + "<br>");
+	document.write("Logical Operators" + "<br>");
+	var eq = (a == b);
+	document.write( "Equal: " + eq + "<br>");
+	var gr = (a >b);
+	document.write( "Greater: " + gr + "<br>");
+	var sm = (a < b);
+	document.write( "Greater: " + sm + "<br>");
+	var ne = (a != b);
+	document.write( "Greater: " + ne + "<br>");
+	var gre = (a >= b);
+	document.write( "Greater or equal: " + gre + "<br>");
+	var sme = (a <= b);
+	document.write( "Lesser or equal: " + sme + "<br>");
+	document.write("Bitwise Operators" + "<br>");
+	}
+</script>
+</body>
+</html>
