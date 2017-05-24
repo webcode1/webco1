@@ -1,0 +1,24 @@
+<!doctype.html>
+<html>
+   <head>
+     <h1>Google</h1>
+   </head>
+   <body>
+     <p id="p"> Sanjay </p>
+   <script>
+   alert("HELLO WORLD JAVA script!!!");
+   window.alert("What's up..?"+(5+6));
+   document.write("i m fine");
+   function abc(a,b)
+   { return(a+b);
+    }
+	document.getElementById("p").innerHTML=abc(5,5);
+	init();
+	function init()
+	{  var p=parseInt(prompt("Please enter the first value"));
+       var q=parseInt(prompt("Please enter the second value"));
+       document.getElementById("p").innerHTML=abc(p,q);	   
+	}
+   </script>
+   </body>
+</html>

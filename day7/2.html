@@ -1,0 +1,21 @@
+<html>
+<input id="numb">
+<button type="button" onclick="my()">Submit</button>
+<p id="demo"></p>
+<script>
+function my()
+{
+var x=document.forms["myForm"]["fname"].value;
+if(x==null || x=="")
+{
+alert("name must be filled out");
+return false;
+
+}
+}
+
+</script>
+<form name="myForm" action="demo.html" onsubmit="return my()" method="post">
+Name:<input type="text" name="fname">
+<input type="submit" value="submit"></form>
+</html>

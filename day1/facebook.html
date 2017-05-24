@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Welcome to the facebook</title>
+
+    <meta name="google-signin-scope" content="https://www.googleapis.com/auth/userinfo.email">
+    <meta name="google-signin-client_id" content="957967078173-3nc83fg395mfpbs13l005roo0hd2r2cr.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  
+</head>
+<body bgcolor="lightblue">
+<h7 font=Aerial colour=white width=100 height=200>FACEBOOK </h7>
+<form ="welcome.php">
+<h3>Email</h3>
+<input type="Email" name="Email">
+<br>
+<h3 color=White>Password</h3>
+<input type="password" name="password">
+<input type="submit" name="submit">
+<center>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+   </center> 
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      };
+    </script>
+</form> 
+<a href ="t.html"><h1>ABOUT</h1></a>
+</body>
+</html>

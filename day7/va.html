@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Try</title>
+	</head>
+	<body>
+		<form name="myform" action="http://www.google.com" onsubmit="myfunc()">
+			<input type="text" name="name" placeholder="Name"><br>
+			<input type="email" name="mail" placeholder="Email ID"><br>
+			<input type="text" name="no" placeholder="Phone Number"><br>
+			<input type="radio" name="gender">Male <input type="radio" name="gender">Female<br>
+			<input type="Submit" value="Submit">
+		</form>
+	<script>
+		function myfunc()
+		{
+			var x=document.forms["myform"]["name"].value;
+			var y=document.forms["myform"]["no"].value;
+			var z=document.forms["myform"]["gender"].value;
+			//return /^[A-z]+$/.test(x);
+			if(x=="" || x==null || x.charAt(0)==' ' || isNaN(y) || z=="")
+			{
+				alert("Input not valid");
+				return false;
+			}
+		}
+	</script>
+	</body>
+</html>

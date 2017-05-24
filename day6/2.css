@@ -1,0 +1,35 @@
+
+#header{
+	background-image:url("sae.jpg");
+	border-bottom:10px #dfdfdf solid;	
+}
+#header h1{
+font:30px "Georgia", Times New Roman, Times, serif;
+	color:#fff;
+	padding:20px 0 0 50px;
+	letter-spacing:0.1em;
+	}
+#header span
+{
+	background-image:url("w.jpg");}
+	
+#container{
+  margin:0px 100px 0px 100px;
+  text-align:center;
+}
+#menu {
+}
+
+/*ul#menu li a:hover {
+  color: #2E5F0F;
+  background: url(../img/bg/menu.gif) repeat-x bottom left;
+}
+
+ul#menu li a.here {
+  color: #512103;
+  background: url(../img/bg/menu.gif) repeat-x bottom left;
+}*/
+#body
+{
+	background-color:white;
+}

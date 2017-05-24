@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="bootstrap.css" >
+</head>
+<body>
+<center> 
+	<form action="newacc.php" method="GET">
+	<center> <h1> Create Account </h1> </center>
+	first name:&nbsp;<input type="text" name="f_name" placeholder="First name" required="true" /><br><br>
+	last name:&nbsp;&nbsp;<input type="text" name="l_name" placeholder="Last name" required="true" /><br><br>
+	Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" required="true" placeholder="Enter email" /><br/><br>
+	password:&nbsp;&nbsp;&nbsp;<input type="password" name="password" placeholder="Choose password" /><br><br>
+	confirm password:&nbsp;&nbsp;<input type="password" name="c_pass" placeholder="Confirm password" /><br><br>
+	Select DOB: <input type="date" name="date" /><br><br>
+	year:<select name="year" required="true">
+						<option></option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						</select>&nbsp;&nbsp;&nbsp;
+	
+	branch:<select name="branch" required="true">
+						<option ></option>
+						<option value="CSE">CSE</option>
+						<option value="IT">IT</option>
+						<option value="ME">ME</option>
+						<option value="CE">CE</option>
+						<option value="EEE">EEE</option>
+					  </select><br><br>
+					<br><br>
+					<input type="submit" value="CREATE ACCOUNT" />
+	</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><title>chatroom</title>
+
+<link rel="stylesheet" type="text/css" href="chatroom_files/first.css">
+<script>
+function formValidate() {
+        var x = document.forms["myform"]["name"].value;
+		
+		if(/[^a-zA-Z]/.test(x))
+		{
+			alert("only alphabets are aloud");
+			return false;
+		}
+		if(x.length<3)
+			{alert("atleast 3 alphabets required");
+			return false;
+			}
+		}
+</script>
+</head>
+<body id="indexbkimg">
+<form method="post" onsubmit="return formValidate()" action="chatroom.php" id="un" name="myform">
+<div id="name"><input name="name" id="check1" maxlength="13" placeholder="USERNAME" required="" type="text"><br></div>
+<div id="submit"><input value="submit" type="submit"></div>
+</form>
+
+</body></html>

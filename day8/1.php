@@ -1,0 +1,14 @@
+<?php
+$a=array(1,3,2,5,8,2,7,4,9,6,11);
+$f=sizeof($a);
+for($i=0;$i<$f;$i++)
+{
+if($a[$i]%2==0)
+$k=$a[$i];
+else
+$g=$a[$i];
+}
+$d=asort($k);
+$j=asort($g);
+print_r(array_merge($d,$j));
+?>
